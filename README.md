@@ -1,3 +1,7 @@
+<div align="center">
+ 
+ <a href="https://github.com/Torrex123/Animack/">
+    <img src="src/img/Animack-Logo-400x80.png" alt="Animack - Anime & Manga tracker">
  </a>
 
  # Animack
@@ -16,8 +20,6 @@
 ## Demo
 
 [![ASCII Demo](demo.gif)](https://github.com/Torrex123/Animack/)
-
-
 
 ## UML diagram
 
