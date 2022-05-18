@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a72e811a36.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <title>Animack - Search</title>
+</head>
+<body>
+
+    <div class="load-blocker" id="load-blocker">
+        <div class="loader">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+        </div>
+    </div>
+
+    <div class="background"></div>
+
+    <header>
+        <div class="header-elements">
+            <a href="intro.html"><img class="logo" src="../img/Animack-Logo-400x80.png" alt=""></a>
+            <div class="options">
+                <a href="ani-list.html"><div class="opt-my-list"><i class="fa-solid fa-list"></i><p>My list</p></div></a>
+                <a href="#"><div class="opt-search"><i class="fa-solid fa-magnifying-glass"></i><p>Search</p></div></a>
+                <a href="config.html"><div class="opt-config"><i class="fa-solid fa-gear"></i><p>Config</p></div></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="searchbar">
+            <input type="text" maxlength="40" placeholder="Search for an anime or manga" id="searchbar" autofocus>
+            <div class="radio-buttons">
+                <input type="radio" name="type" value="Anime" id="Anime" checked>
+                <label for="Anime">Anime</label>
+
+                <input type="radio" name="type" value="Manga" id="Manga">
+                <label for="Manga">Manga</label>
+            </div>
+            <button id="submit" onclick="GetResult()">Search</button>
+        </div>
+
+        <hr>
+
+        <div class="results">
+            <p id="results-query">Write something in the search bar, uwu~</p>
+
+            <div class="results-list" id="results-list">
+                <!-- <button class="list-element">
+                    <img src="" alt="">
+                    <p></p>
+                </button> -->
+            </div>
+
+            <div class="results-pages" id="results-pages">
+                <button id="prev-page" onclick="GetPrevPage()"><i class="fa-solid fa-angle-left"></i></button>
+                <p id="page-number"></p>
+                <button id="next-page" onclick="GetNextPage()"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+
+        <div class="pop-up" id="pop-up">
+            <div class="overlay" id="overlay"></div>
+
+            <div class="box">
+                <div class="close-btn" id="close-btn">&times;</div>
+
+                <div class="content" id="content">
+                    <div class="title-bar"><p id="production-title">-</p></div>
+                    <div class="production-info">
+                        <div class="section-1">
+                            <img src="" alt="" id="production-img">
+                            <div class="add-to-list-btn-container">
+                                <button id="add-to-list" onclick="AddToMyList(content_id, content_type)">Add to my List</button>
+                                <svg class="add-to-list-loader" id="add-to-list-loader" viewBox="0 0 24 24">
+                                    <circle class="loader__value" cx="12" cy="12" r="10" />
+                                    <circle class="loader__value" cx="12" cy="12" r="10" />
+                                    <circle class="loader__value" cx="12" cy="12" r="10" />
+                                    <circle class="loader__value" cx="12" cy="12" r="10" />
+                                    <circle class="loader__value" cx="12" cy="12" r="10" />
+                                    <circle class="loader__value" cx="12" cy="12" r="10" />
+                                </svg>
+                            </div>
+                            <div class="info">
+                                <p id="production-status"></p>
+                                <p id="production-studio"></p>
+                                <p id="production-episodes"></p>
+                                <p id="production-volumes"></p>
+                                <p id="production-chapters"></p>
+                            </div>
+                        </div>
+                        <div class="section-2">
+                            <div class="score-ranking">
+                                <div class="score">
+                                    <p>Average score</p>
+                                    <div class="points">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p id="production-score">- / 100</p>
+                                    </div>
+                                </div>
+                                <div class="ranking">
+                                    <p>Ranking</p>
+                                    <div class="place">
+                                        <i class="fa-solid fa-trophy"></i>
+                                        <p id="production-ranking"># -</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="genres-tags" id="genres-tags">
+                                <!-- <div class="tag">-</div> -->
+                            </div>
+                            <div class="description">
+                                <h2>Description</h2>
+                                <hr>
+                                <p id="production-description"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more-info">
+                    <a href="#" target="_blank" id="anilist-link">
+                        <p>See more info on</p>
+                        <img src="../img/AniList_ico.png" alt="">
+                    </a>
+                </div>
+
+                <div class="add-to-list-alert" id="add-to-list-alert">
+                    <i class="fa-solid fa-circle-check" id="alert-icon"></i>
+                    <span class="alert-msg" id="alert-msg"></span>
+                    <span class="close-alert" id="close-alert">&times;</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="js/search.js"></script>
+</body>
+</html>

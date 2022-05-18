@@ -1,0 +1,66 @@
+@startuml
+
+note as note1
+  The data for the Manga and Anime classes
+  will be extracted from Anilist GraphQL Api
+end note
+
+
+Class Anime{
+    Studio: String
+    Title: String
+    Chapters: int
+    Release_date: string
+    Genre: string
+    Status: boolean
+    Score: int
+}
+
+Class Manga{
+    Author: String
+    volumes: int
+    Title: String
+    Chapters: int
+    Release_date: string
+    Genre: string
+    Status: boolean
+    Score: int
+}
+
+Class Agenda{
+
+    mangas: List[Manga]
+    animes: List[Anime]
+
+    add_anime_or_manga()
+    remove_anime_or_manga()
+}
+
+class Recommendations{
+    filters(Genre: String)
+}
+
+class Customize{
+    Description: string
+
+    addDescription()
+    changeDescription()
+    DeleteDescription()
+    ChangeScore()
+}
+
+class Share{
+    exportAgenda(agenda: Agenda)
+    importAgenda()
+}
+
+Manga "*"--- "1" Agenda:  are saved in >
+Anime "*" --- "1" Agenda:  are saved in >
+Recommendations "*" --o "1" Agenda: are recommended in >
+Customize -o  Agenda
+Anime <|-- Recommendations
+Manga <|-- Recommendations
+Share --o Agenda
+
+
+@enduml

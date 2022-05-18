@@ -1,0 +1,178 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    box-sizing: inherit;
+}
+
+.intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    background: #4EA5D9;
+    transition: 1s;
+}
+
+.intro img {
+    top: 245px;
+    position: absolute;
+}
+
+.intro p {
+    color: rgb(214, 214, 214);
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    color: rgb(214, 214, 214);
+}
+
+.logo-parts {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo-parts.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out .5s;
+}
+
+.logo-parts.fade {
+    bottom: 250px;
+    opacity: 0;
+    transition: ease-in-out .5s;
+}
+
+.content {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.content main {
+    width: 100%;
+}
+
+.content main img {
+    margin-top: 120px;
+    animation: float 2s ease-in-out infinite;
+}
+
+.content main .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content main .buttons a {
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.content main .buttons .button-1,
+.content main .buttons .button-2 {
+    background: #4EA5D9;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    line-height: 50px;
+    transition: ease-in-out .2s;
+}
+
+.content main .buttons .button-1:hover,
+.content main .buttons .button-2:hover {
+    background: #2A4494
+}
+
+.content footer {
+    margin-top: 150px;
+    width: 100%;
+}
+
+.content footer .github-link {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content footer .github-link a {
+    text-decoration: none;
+}
+
+.content footer .github-link i {
+    font-size: 62px;
+    color: #c2c2c2;
+    transition: ease-in-out .2s;
+}
+
+.content footer .github-link i:hover {
+    color: #4EA5D9;
+}
+
+.content footer .version {
+    margin-top: 30px;
+    color: #c2c2c2;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.content .splashart {
+    position: fixed;
+    width: 434px;
+    top: 232px;
+    left: 846px;
+}
+
+/* background pattern */
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+
+    background-color: #e5e5f7;
+    opacity: 0.07;
+    background: repeating-linear-gradient( 45deg, #444cf7, #444cf7 5px, #e5e5f7 5px, #e5e5f7 25px );
+}
+
+/* floating image */
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}

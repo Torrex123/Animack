@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a72e811a36.js" crossorigin="anonymous"></script>
+    <title>Animack - Configuration</title>
+    <link rel="stylesheet" href="css/config.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="load-blocker" id="load-blocker">
+        <div class="loader">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+        </div>
+    </div>
+    
+    <div class="background"></div>
+
+    <header>
+        <div class="header-elements">
+            <a href="intro.html"><img class="logo" src="../img/Animack-Logo-400x80.png" alt=""></a>
+            <div class="options">
+                <a href="ani-list.html"><div class="opt-my-list"><i class="fa-solid fa-list"></i><p>My list</p></div></a>
+                <a href="search.html"><div class="opt-search"><i class="fa-solid fa-magnifying-glass"></i><p>Search</p></div></a>
+                <a href="#"><div class="opt-config"><i class="fa-solid fa-gear"></i><p>Config</p></div></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="preferences">
+            <h2>Preferences</h2>
+            <hr>
+
+            <div class="option-1">
+                <label class="switch">
+                    <input type="checkbox" id="mature-checkbox" onclick="ChangePreference(checked)">
+                    <span class="slider round"></span>
+                </label>
+                <p>Mature content <i>(gore, excesive violence, etc.)</i></p>
+            </div>
+            
+        </div>
+
+        <div class="storage">
+            <h2>Storage</h2>
+            <hr>
+
+            <div class="option-2">
+                <button class="action-btn" onclick="ConfirmDialog('import')">Import</button>
+                <p>Import a list</p>
+                <span id="import-note">Note that importing a list in a wrong format will break the app.</span>
+            </div>
+
+            <div class="option-3">
+                <button class="action-btn" onclick="ExportList()">Export</button>
+                <p>Export your list</p>
+            </div>
+
+            <div class="option-4">
+                <button class="action-btn delete" onclick="ConfirmDialog('delete')">Delete</button>
+                <p>Delete all data</p>
+            </div>
+        </div>
+
+        <div class="pop-up" id="pop-up">
+            <div class="overlay" id="overlay"></div>
+    
+            <div class="box">
+                <p id="pop-up-message"></p>
+                <div class="pop-up-btns">
+                    <div class="btn" id="cancel-btn">Cancel</div>
+                    <div class="btn" id="confirm-btn">Confirm</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="js/config.js"></script>
+</body>
+</html>
