@@ -1,8 +1,10 @@
 <!-- markdownlint-disable MD001 MD007 MD023 MD041 -->
 
 <div align="center">
-
- <img src="src/img/Animack-Logo-400x80.png" alt="Animack - Anime & Manga tracker">
+ 
+ <a href="https://github.com/miraclx/freyr-js">
+    <img src="src/img/Animack-Logo-400x80.png" alt="Animack - Anime & Manga tracker">
+ </a>
      
 </div>
 
