@@ -2,10 +2,9 @@
 
 <div align="center">
 
-    <a href="https://github.com/Torrex123/Animack">
-        <img src="src/img/Animack-Logo-400x80.png" alt="Animack - Anime & Manga tracker">
-    </a>
-
+     <a href="https://github.com/miraclx/freyr-js">
+    <img src="https://github.com/miraclx/freyr-js/raw/master/media/logo.gif" alt="FreyrJS - connoisseur of music">
+  </a>
 </div>
 
 ## UML diagram
