@@ -1,9 +1,9 @@
 <div align="center">
-  
-# Animack
-  
-Keep track of your favorite anime and manga series.
-  
+
+    <a href="https://github.com/Torrex123/Animack">
+        <img src="src/img/Animack-Logo-400x80.png" alt="Animack - Anime & Manga tracker">
+    </a>
+
 </div>
 
 ## UML diagram
