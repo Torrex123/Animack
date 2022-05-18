@@ -1,9 +1,3 @@
-<!-- markdownlint-disable MD001 MD007 MD023 MD041 -->
-
-<div align="center">
- 
- <a href="https://github.com/Torrex123/Animack/">
-    <img src="src/img/Animack-Logo-400x80.png" alt="Animack - Anime & Manga tracker">
  </a>
 
  # Animack
@@ -18,6 +12,12 @@
  [![Python Version](https://img.shields.io/badge/python-%3E%3D3.10.4-green)](https://github.com/Torrex123/Animack/)
      
 </div>
+
+## Demo
+
+[![ASCII Demo](demo.gif)](https://github.com/Torrex123/Animack/)
+
+
 
 ## UML diagram
 
