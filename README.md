@@ -2,7 +2,7 @@
 
 <div align="center">
 
-     <img src="src/img/Animack-Logo-400x80.png" alt="Animack - Anime & Manga tracker">
+ <img src="src/img/Animack-Logo-400x80.png" alt="Animack - Anime & Manga tracker">
      
 </div>
 
