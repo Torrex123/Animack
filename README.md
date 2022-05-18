@@ -2,9 +2,20 @@
 
 <div align="center">
  
- <a href="https://github.com/miraclx/freyr-js">
+ <a href="https://github.com/Torrex123/Animack/">
     <img src="src/img/Animack-Logo-400x80.png" alt="Animack - Anime & Manga tracker">
  </a>
+
+ # Animack
+
+ <h4>
+   Keep track of your anime & manga shows.
+ </h4>
+
+ [![GitHub](https://img.shields.io/badge/by-giusgo-blue)](https://github.com/giusgo)
+ [![GitHub](https://img.shields.io/badge/by-Torrex123-blue)](https://github.com/Torrex123)
+ [![Framework](https://img.shields.io/badge/framework-pywebview-green)](https://pywebview.flowrl.com/)
+ [![Python Version](https://img.shields.io/badge/python-%3E%3D3.10.4-green)](https://github.com/Torrex123/Animack/)
      
 </div>
 
