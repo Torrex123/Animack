@@ -24,6 +24,4 @@ Click on the button 'Code' and download the .zip folder with the project, or jus
 
 `git clone https://github.com/Torrex123/Animack.git`
 
-Execute the file `main.py` and start using the app via terminal.
-
-**NOTE:** We're planning to add a graphical interface to enhance the user experience, so our code doesn't have input validations.
+Intall the requirements in the `requirements.txt` file, execute the file `main.py` and start using the app via terminal.
