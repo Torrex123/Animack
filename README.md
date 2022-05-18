@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD001 MD007 MD023 MD041 -->
+
 <div align="center">
 
     <a href="https://github.com/Torrex123/Animack">
