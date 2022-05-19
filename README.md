@@ -19,7 +19,7 @@
 
 ## Demo
 
-[![ASCII Demo](demo.gif)](https://github.com/Torrex123/Animack/)
+[![Demo](demo.gif)](https://github.com/Torrex123/Animack/)
 
 ## Overview
 
@@ -37,6 +37,6 @@ It will provide you with basic functionalities of an anime & manga app tracker. 
 
 <div align="center">
   
-<img src="UML.png" alt="Animack UML" style="height:500px;"/>
+<img src="UML.png" alt="Animack UML" style="width: 100%;"/>
  
 </div>
