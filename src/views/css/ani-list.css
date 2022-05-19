@@ -293,7 +293,7 @@ table tbody .title {
 }
 
 table tbody input[type="text"] {
-    width: 45px;
+    width: 35px;
     text-align: center;
     border: none;
     border-bottom: 2px solid transparent;
@@ -306,6 +306,7 @@ table tbody input[type="text"]:focus {
 
 table tbody .action-button {
     color: #4EA5D9;
+    font-size: 20px;
     cursor: pointer;
 }
 

@@ -60,14 +60,14 @@ function CreateListElement(data, i) {
         <td class="cover-image"><img id="cover-image" src="${data["coverimage"]}" alt=""></td>
         <td class="title">${data["title"]}</td>
         <td class="progress">
-            <i class="fa-solid fa-circle-plus action-button" onclick="ChangeEpisodesByButtons(${data["id"]}, ${data["episodes"]}, 1, ${i})"></i>
-            <input type="text" onkeypress="ValidateTextInput(event), ChangeEpisodesByEnterPress(${i})" maxlength="4" id="actual-progress-${i}" value="${data["progress"]}" onblur="ChangeEpisodesByTextInput(${data["id"]}, ${data["episodes"]}, value, ${i})"> / <span id="total-episodes">${data["episodes"]}</span>
             <i class="fa-solid fa-circle-minus action-button" onclick="ChangeEpisodesByButtons(${data["id"]}, ${data["episodes"]}, -1, ${i})"></i>
+            <input type="text" onkeypress="ValidateTextInput(event), ChangeEpisodesByEnterPress(${i})" maxlength="4" id="actual-progress-${i}" value="${data["progress"]}" onblur="ChangeEpisodesByTextInput(${data["id"]}, ${data["episodes"]}, value, ${i})"> / <span id="total-episodes">${data["episodes"]}</span>
+            <i class="fa-solid fa-circle-plus action-button" onclick="ChangeEpisodesByButtons(${data["id"]}, ${data["episodes"]}, 1, ${i})"></i>
         </td>
         <td class="score">
-            <i class="fa-solid fa-circle-plus action-button" onclick="ChangeScoreByButtons(${data["id"]}, 1, ${i})"></i>
-            <input type="text" onkeypress="ValidateTextInput(event), ChangeScoreByEnterPress(${i})" maxlength="2" id="actual-score-${i}" value="${data["score"]}" onblur="ChangeScoreByTextInput(${data["id"]}, value, ${i})"> / 10
             <i class="fa-solid fa-circle-minus action-button" onclick="ChangeScoreByButtons(${data["id"]}, -1, ${i})"></i>
+            <input type="text" onkeypress="ValidateTextInput(event), ChangeScoreByEnterPress(${i})" maxlength="2" id="actual-score-${i}" value="${data["score"]}" onblur="ChangeScoreByTextInput(${data["id"]}, value, ${i})"> / 10
+            <i class="fa-solid fa-circle-plus action-button" onclick="ChangeScoreByButtons(${data["id"]}, 1, ${i})"></i>
         </td>
         <td class="release-date">${data["releasedate"]}</td>
         <td class="status" id="status-${i}">${data["status"]}</td>
