@@ -33,7 +33,7 @@ It will provide you with basic functionalities of an anime & manga app tracker. 
 4. Give you the option to `rate` the selected show on a scale of 10.
 5. And finally, your list is saved on a sigle file which you can `export` and save elsewhere or `import` another file.
 
-### UML diagram
+### Class diagram
 
 <div align="center">
   
