@@ -10,10 +10,10 @@
    Keep track of your anime & manga shows.
  </h4>
 
- [![GitHub](https://img.shields.io/badge/by-giusgo-blue)](https://github.com/giusgo)
- [![GitHub](https://img.shields.io/badge/by-Torrex123-blue)](https://github.com/Torrex123)
- [![Framework](https://img.shields.io/badge/framework-pywebview-green)](https://pywebview.flowrl.com/)
- [![Python Version](https://img.shields.io/badge/python-%3E%3D3.10.4-green)](https://github.com/Torrex123/Animack/)
+ [![GitHub](https://img.shields.io/badge/by-giusgo-green)](https://github.com/giusgo)
+ [![GitHub](https://img.shields.io/badge/by-Torrex123-green)](https://github.com/Torrex123)
+ [![Framework](https://img.shields.io/badge/framework-pywebview-blue)](https://pywebview.flowrl.com/)
+ [![Python Version](https://img.shields.io/badge/python-%3E%3D3.10.4-blue)](https://www.python.org/downloads/release/python-3104/)
      
 </div>
 
@@ -21,22 +21,14 @@
 
 [![ASCII Demo](demo.gif)](https://github.com/Torrex123/Animack/)
 
-## UML diagram
+## Overview
 
-<div align="center">
-  
-<img src="UML.png" alt="Animack UML" style="height:500px;"/>
- 
-</div>
+### What Animack does
 
-## Functional requeriments
+It will provide you with basic functionalities of an anime & manga app tracker. It will:
 
-1. **Search for a specific title**: For starting an agenda or tracker, users want to look and see if a specific anime or manga is available.
-
-## How to use
-
-Click on the button 'Code' and download the .zip folder with the project, or just open a terminal and type:
-
-`git clone https://github.com/Torrex123/Animack.git`
-
-Intall the requirements in the `requirements.txt` file, execute the file `main.py` and start using the app via terminal.
+1. `Search` for a anime or manga given a specific or general title.
+2. Give you the option to `add the show` to your list.
+3. Give you the ability to `edit`/`track` your progress on a show manually in 'My List' section.
+4. Give you the option to `rate` the selected show on a scale of 10.
+5. And finally, your list is saved on a sigle file which you can `export` and save elsewhere or `import` another file.
