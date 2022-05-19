@@ -32,3 +32,23 @@ It will provide you with basic functionalities of an anime & manga app tracker. 
 3. Give you the ability to `edit`/`track` your progress on a show manually in 'My List' section.
 4. Give you the option to `rate` the selected show on a scale of 10.
 5. And finally, your list is saved on a sigle file which you can `export` and save elsewhere or `import` another file.
+
+## UML diagram
+
+<div align="center">
+  
+<img src="UML.png" alt="Animack UML" style="height:500px;"/>
+ 
+</div>
+
+## Functional requeriments
+
+1. **Search for a specific title**: For starting an agenda or tracker, users want to look and see if a specific anime or manga is available.
+
+## How to use
+
+Click on the button 'Code' and download the .zip folder with the project, or just open a terminal and type:
+
+`git clone https://github.com/Torrex123/Animack.git`
+
+Execute the file `main.py` and start using the app via terminal.
