@@ -181,4 +181,4 @@ jsapi = JavaScriptAPI()
 window = webview.create_window(title='Animack', js_api = jsapi, width = 1280, height = 720, \
                       resizable = False, fullscreen = False, text_select = False, confirm_close = True)
 
-webview.start(load_url, window, debug=True)
+webview.start(load_url, window)
