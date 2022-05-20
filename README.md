@@ -37,7 +37,7 @@ It will provide you with basic functionalities of an anime & manga app tracker. 
 
 <div align="center">
   
-<img src="Uml.png" alt="Animack UML" style="width: 80%;"/>
+<img src="uml.png" alt="Animack UML" style="width: 80%;"/>
  
 </div>
 
