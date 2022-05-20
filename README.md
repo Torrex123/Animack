@@ -19,7 +19,7 @@
 
 ## Demo
 
-[![Demo](demo.gif)](https://github.com/Torrex123/Animack/)
+[![Demo](demos/demo.gif)](https://github.com/Torrex123/Animack/)
 
 ## Overview
 
@@ -46,6 +46,8 @@ It will provide you with basic functionalities of an anime & manga app tracker. 
 ### Source code
 
 We highly recommend using <a href="https://pyinstaller.org/en/stable/index.html">pyinstaller</a> to make the executable for your system. Read their manual to know how to bundle a Python application and all its dependencies (see <a href="https://github.com/Torrex123/Animack/blob/main/requirements.txt">requirements.txt</a>).
+
+<b>NOTE:</b> Make sure to add the `src` folder to the executable path in such a way it can read the files it needs to display.
 
 ### Pre-built binaries
 
@@ -76,3 +78,53 @@ cd 'Animack_v1.02_(linux-build)'
 ```bash
 chmod +x Animack
 ```
+
+## Getting started
+
+### Searching
+
+This is the most basic function of the app. You can search for any anime or manga.
+
+<div align="center">
+<img src="demos/search.png" style="width: 90%;"/>
+</div>
+
+Use the search bar tool to look for some show in specific.
+
+<div align="center">
+<img src="demos/search-bar-tool.png" style="width: 90%;"/>
+</div>
+
+If you click any of the results, you may be able to see more info about it and an option to add it to your list.
+
+<div align="center">
+<img src="demos/more-info.png" style="width: 90%;"/>
+</div>
+
+### Your list
+
+Besides searching for shows and manga, you can add them to your list.
+
+<div align="center">
+<img src="demos/my-list.png" style="width: 90%;"/>
+</div>
+
+You can track the progress of each individual show or give it a personal score.
+
+<div align="center">
+<img src="demos/list-element.png" style="width: 70%;"/>
+</div>
+
+Also, you have a recommendation button which gives you some recommendations based on the shows you have on your list.
+
+<div align="center">
+<img src="demos/recommendations.png" style="width: 50%;"/>
+</div>
+
+### Configuration
+
+Through this menu you can establish you preferences related to the content displayed in the application when searching. Also, you can import an existing list, export the current or delete it.
+
+<div align="center">
+<img src="demos/config.png" style="width: 90%;"/>
+</div>
