@@ -80,9 +80,15 @@ function CreateListElement(data, i) {
 
 document.getElementById("load-blocker").style.display = "flex"; // Loading animation
 // Print the list.
-setTimeout(() => {
-    PrintList();
-}, 1000);
+try {
+    setTimeout(() => {
+        PrintList();
+    }, 1000);
+} catch {
+    window.location.reload(); // Reload the page.
+}
+
+
 
 
 

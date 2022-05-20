@@ -31,10 +31,15 @@ function ChangePreference(checked) {
 }
 
 document.getElementById("load-blocker").style.display = "flex"; // Loading animation
-// Timeout to load python after js.
-setTimeout(() => {
-    GetDefaultPreference();
-}, 1000);
+// Print the list.
+try {
+    setTimeout(() => {
+        GetDefaultPreference();
+    }, 1000);
+} catch {
+    window.location.reload(); // Reload the page.
+}
+
 
 
 
@@ -74,6 +79,30 @@ function ConfirmDialog(purpose) {
 
 }
 
+// Function to get the OS of the user.
+function getOS() {
+    var userAgent = window.navigator.userAgent,
+        platform = window.navigator?.userAgentData?.platform ?? window.navigator.platform,
+        macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+        windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+        iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+        os = null;
+  
+    if (macosPlatforms.indexOf(platform) !== -1) {
+      os = 'Mac OS';
+    } else if (iosPlatforms.indexOf(platform) !== -1) {
+      os = 'iOS';
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+      os = 'Windows';
+    } else if (/Android/.test(userAgent)) {
+      os = 'Android';
+    } else if (!os && /Linux/.test(platform)) {
+      os = 'Linux';
+    }
+  
+    return os;
+}
+
 // Function to import a different list.
 function ImportList() {
     
@@ -108,15 +137,25 @@ function ExportList() {
 
     pywebview.api.saveFileDialog().then(function(response) {
         try {
-            response = response.join('');
+            var routeArray;
 
-            const routeArray = response.split('/');
-            let lastIndex = routeArray.length;
+            // Getting the OS of the user and splitting the path depending on it.
+            if (getOS() == 'Windows') {
+                routeArray = response.split('\\');
+            } else if (getOS() == 'Linux') {
+                response = response.join('');
+                routeArray = response.split('/');
+            }
 
-            var fileName = routeArray[lastIndex - 1]; // Specifying the file name.
+            let lastIndex = routeArray.length - 1;
+
+            var fileName = routeArray[lastIndex]; // Specifying the file name.
+
+            const fileNameArray = fileName.split('.');
+            lastIndex = fileNameArray.length - 1;
 
             // Validating the extension on the file name.
-            if (fileName.split('.').length - 1 != ".db") {
+            if (fileNameArray[lastIndex] != "db") {
                 fileName = fileName + ".db";
             }
 

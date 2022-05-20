@@ -80,9 +80,14 @@ function CreateListElement(data, i) {
 
 document.getElementById("load-blocker").style.display = "flex"; // Loading animation
 // Print the list.
-setTimeout(() => {
-    PrintList();
-}, 1000);
+try {
+    setTimeout(() => {
+        PrintList();
+    }, 1000);
+} catch {
+    window.location.reload(); // Reload the page.
+}
+
 
 
 
@@ -325,8 +330,6 @@ function GetRecommendation() {
 
     // Python function to get recommendations.
     pywebview.api.recommendationButton('ANIME').then(function (response) {
-        
-        const data = JSON.parse(response);
 
         // Showing the list
         const list = document.getElementById("recommendations-list");
@@ -340,6 +343,8 @@ function GetRecommendation() {
             `;
         } else {
             // If there are some recommendations.
+
+            const data = JSON.parse(response);
 
             // Creating the elements:
             list.innerHTML = `
