@@ -89,11 +89,13 @@ This is the most basic function of the app. You can search for any anime or mang
 <img src="demos/search.png" style="width: 90%;"/>
 </div>
 
+
 Use the search bar tool to look for some show in specific.
 
 <div align="center">
 <img src="demos/search-bar-tool.png" style="width: 90%;"/>
 </div>
+
 
 If you click any of the results, you may be able to see more info about it and an option to add it to your list.
 
@@ -109,11 +111,13 @@ Besides searching for shows and manga, you can add them to your list.
 <img src="demos/my-list.png" style="width: 90%;"/>
 </div>
 
+
 You can track the progress of each individual show or give it a personal score.
 
 <div align="center">
 <img src="demos/list-element.png" style="width: 70%;"/>
 </div>
+
 
 Also, you have a recommendation button which gives you some recommendations based on the shows you have on your list.
 
