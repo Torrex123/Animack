@@ -47,7 +47,7 @@ It will provide you with basic functionalities of an anime & manga app tracker. 
 
 We highly recommend using <a href="https://pyinstaller.org/en/stable/index.html">pyinstaller</a> to make the executable for your system. Read their manual to know how to bundle a Python application and all its dependencies (see <a href="https://github.com/Torrex123/Animack/blob/main/requirements.txt">requirements.txt</a>).
 
-<b>NOTE:</b> Make sure to add the `src` folder to the executable path in such a way it can read the files it needs to display.
+<b>NOTE:</b> Make sure to add the <a href="https://github.com/Torrex123/Animack/tree/main/src">src</a> folder to the executable path in such a way it can read the files it needs to display.
 
 ### Pre-built binaries
 
