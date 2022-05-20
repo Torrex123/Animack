@@ -87,9 +87,9 @@ This is the most basic function of the app. You can search for any anime or mang
 
 <div align="center">
 <img src="demos/search.png" style="width: 90%;"/>
-</div>
+</div>\
 
-\nUse the search bar tool to look for some show in specific.
+Use the search bar tool to look for some show in specific.
 
 <div align="center">
 <img src="demos/search-bar-tool.png" style="width: 90%;"/>
