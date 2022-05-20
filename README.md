@@ -51,4 +51,29 @@ We highly recommend using <a href="https://pyinstaller.org/en/stable/index.html"
 
 #### Windows
 
-Go to <a href="https://github.com/Torrex123/Animack/releases">releases page</a> and download the latest version.
+Get the latest version of <a href="https://www.python.org/">Python</a>. After that, go to the <a href="https://github.com/Torrex123/Animack/releases">releases page</a> and download the latest version of the windows build package (`
+Animack_vx.xx_windows-build.zip`). Finally, unzip the folder and execute `Animack.exe`.
+
+#### Linux
+
+All the dependencies and bundled inside the application's folder, so just open a terminal and follow the instructions.
+
++ Download the file:
+```bash
+wget https://github.com/Torrex123/Animack/releases/download/v1.02/Animack_v1.02_linux-build.tar.xz
+```
+
++ Decompress the file:
+```bash
+tar xf 'Animack_v1.02_linux-build.tar.xz'
+```
+
++ Change directory:
+```bash
+cd 'Animack_v1.02_(linux-build)'
+```
+
++ Make the file executable:
+```bash
+chmod +x Animack
+```
