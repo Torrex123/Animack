@@ -1,66 +1,105 @@
 @startuml
 
-note as note1
-  The data for the Manga and Anime classes
-  will be extracted from Anilist GraphQL Api
-end note
-
-
 Class Anime{
-    Studio: String
-    Title: String
-    Chapters: int
-    Release_date: string
-    Genre: string
-    Status: boolean
+
+    title: String
+    anilist_id: int
+    episodes: int
+    type: string
+    progress: int
+    start_date: string
+    coverimage: string
+    status: String
     Score: int
 }
 
 Class Manga{
-    Author: String
-    volumes: int
-    Title: String
-    Chapters: int
-    Release_date: string
-    Genre: string
-    Status: boolean
+
+    title: String
+    anilist_id: int
+    episodes: int
+    type: string
+    progress: int
+    start_date: string
+    status: String
+    coverimage: string
     Score: int
+
 }
 
 Class Agenda{
 
-    mangas: List[Manga]
-    animes: List[Anime]
+    addContent()
+    removeContent()
 
-    add_anime_or_manga()
-    remove_anime_or_manga()
+}
+
+class Database{
+
+    checkRegisters()
+    addRow()
+    checkContents()
+    remove_row()
+    countRows()
+    updateRowScore()
+    updateRowProgress()
+    updateRowStatus()
+    updateAllRowsIndexes()
+    getRows()
+    getRandomRow()
+    getRowEpisodes()
+    getRowProgress()
+
+}
+
+class Api{
+
+    titleSearch()
+    getResults()
+    previewData()
+    getData()
+    recommendation()
+
 }
 
 class Recommendations{
-    filters(Genre: String)
+
+    getRecommendation()
+
 }
 
-class Customize{
-    Description: string
+class Customization{
 
-    addDescription()
-    changeDescription()
-    DeleteDescription()
-    ChangeScore()
+    changeScore()
+    changeProgress()
+    changeStatus()
+
 }
 
-class Share{
-    exportAgenda(agenda: Agenda)
-    importAgenda()
+Class File{
+
+    saveDatabaseCopy()
+    deleteAllData()
+    overwriteDatabase()
+    defaultPreference()
+    preferences()
+    getPreference()
+    checkDatabaseExistence()
+
 }
 
-Manga "*"--- "1" Agenda:  are saved in >
-Anime "*" --- "1" Agenda:  are saved in >
-Recommendations "*" --o "1" Agenda: are recommended in >
-Customize -o  Agenda
-Anime <|-- Recommendations
-Manga <|-- Recommendations
-Share --o Agenda
+
+
+Recommendations "4" --o "1" Agenda: are recommended in >
+Api <|-- Recommendations
+Database <|-- Recommendations
+Database <|-- Customization
+File --- Agenda
+Database <|-- Agenda
+Manga "*"--- "1" Agenda: goes in >
+Anime "*" --- "1" Agenda: goes in >
+Manga --- Api
+Anime --- Api
 
 
 @enduml
