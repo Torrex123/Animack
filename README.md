@@ -51,8 +51,7 @@ We highly recommend using <a href="https://pyinstaller.org/en/stable/index.html"
 
 #### Windows
 
-Get the latest version of <a href="https://www.python.org/">Python</a>. After that, go to the <a href="https://github.com/Torrex123/Animack/releases">releases page</a> and download the latest version of the windows build package (`
-Animack_vx.xx_windows-build.zip`). Finally, unzip the folder and execute `Animack.exe`.
+Get the latest version of <a href="https://www.python.org/">Python</a>. After that, go to the <a href="https://github.com/Torrex123/Animack/releases">releases page</a> and download the latest version of the windows build package (`Animack_vx.xx_windows-build.zip`). Finally, unzip the folder and execute `Animack.exe`.
 
 #### Linux
 
