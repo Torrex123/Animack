@@ -40,3 +40,15 @@ It will provide you with basic functionalities of an anime & manga app tracker. 
 <img src="Uml.png" alt="Animack UML" style="width: 80%;"/>
  
 </div>
+
+## Installation
+
+### Source code
+
+We highly recommend using <a href="https://pyinstaller.org/en/stable/index.html">pyinstaller</a> to make the executable for your system. Read their manual to know how to bundle a Python application and all its dependencies (see <a href="https://github.com/Torrex123/Animack/blob/main/requirements.txt">requirements.txt</a>).
+
+### Pre-built binaries
+
+#### Windows
+
+Go to <a href="https://github.com/Torrex123/Animack/releases">releases page</a> and download the latest version.
