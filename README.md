@@ -61,13 +61,13 @@ All the dependencies and bundled inside the application's folder, so just open a
 
 + Download the file:
   + Arch-based distros:
-```bash
-wget https://github.com/Torrex123/Animack/releases/download/v1.02/Animack_v1.02_arch-linux-build.tar.xz
-```
+  ```bash
+  wget https://github.com/Torrex123/Animack/releases/download/v1.02/Animack_v1.02_arch-linux-build.tar.xz
+  ```
   + Ubuntu-based distros:
-```bash
-wget https://github.com/Torrex123/Animack/releases/download/v1.02/Animack_v1.02_ubuntu-linux-build.tar.gz
-```
+  ```bash
+  wget https://github.com/Torrex123/Animack/releases/download/v1.02/Animack_v1.02_ubuntu-linux-build.tar.gz
+  ```
 
 + Decompress the downloaded file:
 ```bash
