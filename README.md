@@ -60,23 +60,33 @@ Get the latest version of <a href="https://www.python.org/">Python</a>. After th
 All the dependencies and bundled inside the application's folder, so just open a terminal and follow the instructions.
 
 + Download the file:
+  + Arch-based distros:
 ```bash
-wget https://github.com/Torrex123/Animack/releases/download/v1.02/Animack_v1.02_linux-build.tar.xz
+wget https://github.com/Torrex123/Animack/releases/download/v1.02/Animack_v1.02_arch-linux-build.tar.xz
+```
+  + Ubuntu-based distros:
+```bash
+wget https://github.com/Torrex123/Animack/releases/download/v1.02/Animack_v1.02_ubuntu-linux-build.tar.gz
 ```
 
-+ Decompress the file:
++ Decompress the downloaded file:
 ```bash
-tar xf 'Animack_v1.02_linux-build.tar.xz'
+tar -xf 'file_name'
 ```
 
-+ Change directory:
++ Change to the decompressed directory:
 ```bash
-cd 'Animack_v1.02_(linux-build)'
+cd 'folder_name'
 ```
 
-+ Make the file executable:
++ Change permissions to the executable file:
 ```bash
 chmod +x Animack
+```
+
++ Execute the file (in the same folder):
+```bash
+./Animack
 ```
 
 ## Getting started
